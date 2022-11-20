@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_CLIENTS } from '../queries/clientQueries';
 import ClientRow from './ClientRow';
-
+import Spinner from './Spinner';
 
 
 const Clients = () => {
@@ -10,7 +10,7 @@ const Clients = () => {
  const { loading, error, data } = useQuery(GET_CLIENTS);
 
 
- if(loading) return <p>Loading....</p>
+ if(loading) return <Spinner />;
  if(error)   return <p>Something Went Wrong</p>
 
   return (
