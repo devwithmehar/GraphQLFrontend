@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assests/logo.png'
+
 
 const Header = () => {
   return (
@@ -7,9 +7,9 @@ const Header = () => {
     <div className='container' >
       <a className='navbar-brand' href='/' >
         <div className="d-flex">
-          <img src={logo} alt='logo' className='mr-2' />
+
           <div>
-            GraphQL Project
+            Client Data
           </div>
         </div>
       </a>
